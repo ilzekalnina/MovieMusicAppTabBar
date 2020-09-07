@@ -111,7 +111,7 @@ class MusicTableViewController: UITableViewController {
                 // Get the new view controller using segue.destination.
                 // Pass the selected object to the new view controller.
                 print(indexPath.row)
-                let musicDetailVC = segue.destination as! MusicDetailTableViewController
+                let musicDetailVC = segue.destination as! MusicDetailViewController
                 musicDetailVC.musicTrack = musicTracks[indexPath.row]
             }
 

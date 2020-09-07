@@ -45,7 +45,6 @@
                                                                         <constraint firstAttribute="height" constant="39" id="xM7-x8-lD1"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQW-9L-R4b">
@@ -55,7 +54,6 @@
                                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TII-7V-TNt"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -95,6 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="MovieList" id="6rv-rM-SNm">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="iiK-y1-eaL">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="editButtonTapped:" destination="BYZ-38-t0r" id="xse-HJ-q4Z"/>
                             </connections>
@@ -204,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="2025" y="841"/>
         </scene>
-        <!--Music Detail Table View Controller-->
+        <!--Music Detail View Controller-->
         <scene sceneID="KVc-yK-KKm">
             <objects>
-                <viewController id="X79-gL-r0c" customClass="MusicDetailTableViewController" customModule="MovieMusicAppTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X79-gL-r0c" customClass="MusicDetailViewController" customModule="MovieMusicAppTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8HM-yr-y8u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,8 +243,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="5gE-Ip-TZT"/>
                     <connections>
-                        <outlet property="musicImageView" destination="fWw-C4-8MM" id="AQx-aU-Bfl"/>
-                        <outlet property="musicLabel" destination="DRM-37-1NV" id="BcM-LP-k00"/>
+                        <outlet property="musicImageView" destination="fWw-C4-8MM" id="Z2O-vY-WMC"/>
+                        <outlet property="musicLabel" destination="DRM-37-1NV" id="uli-fy-czu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nud-4z-Dya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

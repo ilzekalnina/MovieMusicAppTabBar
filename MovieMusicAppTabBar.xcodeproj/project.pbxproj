@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77160A6C250673760063BDC0 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77160A6B250673760063BDC0 /* MusicTableViewController.swift */; };
-		77B0EED625067E0900BD39A5 /* MusicDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0EED525067E0900BD39A5 /* MusicDetailTableViewController.swift */; };
+		77B0EED8250683E300BD39A5 /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B0EED7250683E300BD39A5 /* MusicDetailViewController.swift */; };
 		77EC13B0250619540060189A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC13AF250619540060189A /* AppDelegate.swift */; };
 		77EC13B2250619540060189A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC13B1250619540060189A /* SceneDelegate.swift */; };
 		77EC13B4250619540060189A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC13B3250619540060189A /* ViewController.swift */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		77160A6B250673760063BDC0 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
-		77B0EED525067E0900BD39A5 /* MusicDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailTableViewController.swift; sourceTree = "<group>"; };
+		77B0EED7250683E300BD39A5 /* MusicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
 		77EC13AC250619540060189A /* MovieMusicAppTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieMusicAppTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EC13AF250619540060189A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77EC13B1250619540060189A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				77EC13B3250619540060189A /* ViewController.swift */,
 				77EC13C325062B940060189A /* MovieTableViewCell.swift */,
 				77EC13CE25066BF70060189A /* MovieDetailViewController.swift */,
-				77B0EED525067E0900BD39A5 /* MusicDetailTableViewController.swift */,
+				77B0EED7250683E300BD39A5 /* MusicDetailViewController.swift */,
 				77160A6B250673760063BDC0 /* MusicTableViewController.swift */,
 			);
 			path = Controller;
@@ -199,10 +199,10 @@
 				77EC13B4250619540060189A /* ViewController.swift in Sources */,
 				77160A6C250673760063BDC0 /* MusicTableViewController.swift in Sources */,
 				77EC13CD25062ED30060189A /* DataManager.swift in Sources */,
-				77B0EED625067E0900BD39A5 /* MusicDetailTableViewController.swift in Sources */,
 				77EC13B0250619540060189A /* AppDelegate.swift in Sources */,
 				77EC13C425062B940060189A /* MovieTableViewCell.swift in Sources */,
 				77EC13CF25066BF70060189A /* MovieDetailViewController.swift in Sources */,
+				77B0EED8250683E300BD39A5 /* MusicDetailViewController.swift in Sources */,
 				77EC13B2250619540060189A /* SceneDelegate.swift in Sources */,
 				77EC13CA25062E150060189A /* Movie.swift in Sources */,
 			);
