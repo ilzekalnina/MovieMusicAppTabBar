@@ -32,3 +32,27 @@ struct Movie {
     }
 }
 
+struct MusicTrack {
+    
+    let artist: String
+    let album: String
+    let albumCover: String
+    
+    //static means that can't override this function
+    static func createMusicTrack() -> [MusicTrack]{
+        var musicTracks: [MusicTrack] = []
+        
+        let artist = DataManager.shared.artist
+        let album = DataManager.shared.album
+        let albumCover = DataManager.shared.albumCover
+        
+        for index in 0..<artist.count {
+            let track = MusicTrack(artist: artist[index], album: album[index], albumCover: albumCover[index])
+            musicTracks.append(track)
+        }
+        
+        return musicTracks
+    }
+    
+}
+

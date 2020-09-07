@@ -86,7 +86,7 @@ class DataManager {
         "Stop Snitching"
     ]
     
-    var albumcover = [
+    var albumCover = [
         "Carly Rae Japsen - Dedicated",
         "Dj Khaled - father of",
         "Injury Reserve - Jailbrake",

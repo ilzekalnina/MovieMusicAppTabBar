@@ -188,6 +188,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="X79-gL-r0c" kind="show" id="R6c-ct-oD9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -200,6 +203,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agk-iV-XAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2025" y="841"/>
+        </scene>
+        <!--Music Detail Table View Controller-->
+        <scene sceneID="KVc-yK-KKm">
+            <objects>
+                <viewController id="X79-gL-r0c" customClass="MusicDetailTableViewController" customModule="MovieMusicAppTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8HM-yr-y8u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-lb-tef">
+                                <rect key="frame" x="67.5" y="166" width="240" height="335"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fWw-C4-8MM">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="2Ed-bp-ydW"/>
+                                            <constraint firstAttribute="height" constant="240" id="fed-Ke-A66"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-37-1NV">
+                                        <rect key="frame" x="0.0" y="284" width="240" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="iQf-4Z-Q3c"/>
+                                            <constraint firstAttribute="width" constant="240" id="vsr-OT-bML"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e1W-lb-tef" firstAttribute="centerY" secondItem="8HM-yr-y8u" secondAttribute="centerY" id="3Wz-Zl-yBi"/>
+                            <constraint firstItem="e1W-lb-tef" firstAttribute="centerX" secondItem="8HM-yr-y8u" secondAttribute="centerX" id="UOo-KB-8Hy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c3g-bz-RdC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5gE-Ip-TZT"/>
+                    <connections>
+                        <outlet property="musicImageView" destination="fWw-C4-8MM" id="AQx-aU-Bfl"/>
+                        <outlet property="musicLabel" destination="DRM-37-1NV" id="BcM-LP-k00"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nud-4z-Dya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759.1999999999998" y="837.93103448275872"/>
         </scene>
         <!--Music-->
         <scene sceneID="XTZ-RB-kuI">
