@@ -271,18 +271,39 @@
         <!--App Info-->
         <scene sceneID="Vpp-Rk-C6w">
             <objects>
-                <viewController id="N92-aS-ubB" sceneMemberID="viewController">
+                <viewController id="N92-aS-ubB" customClass="AppInfoViewController" customModule="MovieMusicAppTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eM0-KW-4MK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-b9-fYH">
+                                <rect key="frame" x="93" y="183.5" width="189" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="I1p-Ur-0vN"/>
+                                    <constraint firstAttribute="width" constant="189" id="Tva-9R-taJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gJa-b9-fYH" firstAttribute="centerX" secondItem="eM0-KW-4MK" secondAttribute="centerX" id="92s-G6-Tfr"/>
+                            <constraint firstItem="gJa-b9-fYH" firstAttribute="centerY" secondItem="eM0-KW-4MK" secondAttribute="centerY" id="GDR-1E-3Mi"/>
+                            <constraint firstItem="gJa-b9-fYH" firstAttribute="centerX" secondItem="eM0-KW-4MK" secondAttribute="centerX" id="HiW-4H-NUp"/>
+                            <constraint firstItem="gJa-b9-fYH" firstAttribute="centerY" secondItem="eM0-KW-4MK" secondAttribute="centerY" id="o3x-hO-E7h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lFm-vg-jXV"/>
                     </view>
                     <navigationItem key="navigationItem" title="App Info" id="I0A-gi-dxS"/>
+                    <connections>
+                        <outlet property="appInfoLabel" destination="gJa-b9-fYH" id="UeT-Kt-GuS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cev-DZ-bUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="1598"/>
+            <point key="canvasLocation" x="1069.5999999999999" y="1597.1514242878561"/>
         </scene>
         <!--Movies-->
         <scene sceneID="5AO-OI-Myq">
